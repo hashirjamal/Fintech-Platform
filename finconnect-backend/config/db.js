@@ -8,13 +8,13 @@ const sequelize = new Sequelize({
     password: process.env.DB_PASS,
     database: process.env.DB_NAME,
     port: process.env.DB_PORT,
-    dialectOptions: {
-        ssl: {
-            require: true,
-            rejectUnauthorized: false,
-            ca: fs.readFileSync("./config/ca.pem").toString(),
-        },
-    },
+    // dialectOptions: {
+    //     ssl: {
+    //         require: false,
+    //         rejectUnauthorized: false,
+    //         ca: fs.readFileSync("./config/ca.pem").toString(),
+    //     },
+    // },
 });
 
 const startSQL = async () => {
@@ -27,5 +27,4 @@ const startSQL = async () => {
         console.error("Unable to connect to the database:", error);
     }
 };
-
 module.exports = { sequelize, startSQL };
