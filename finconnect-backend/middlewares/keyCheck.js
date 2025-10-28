@@ -1,0 +1,1 @@
+This code implements an API Key Authentication Middleware for securing your FinTech API endpoints.
