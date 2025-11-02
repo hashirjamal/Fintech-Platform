@@ -49,4 +49,4 @@ app.listen(PORT, () => {
     console.log(`Server is listening on PORT ${PORT}`);
 });
 
-module.exports = {express}
+module.exports = app;

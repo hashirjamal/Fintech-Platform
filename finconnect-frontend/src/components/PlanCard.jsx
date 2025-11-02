@@ -53,7 +53,7 @@ const PlanCard = ({ item, currentSubscription, subscriptionInfo }) => {
       <h2 className="text-2xl font-bold text-accent mb-2">{item.name}</h2>
       <p className="text-textSecondary mb-4">{item.description}</p>
       <div className="text-4xl text-accent font-bold mb-6">
-        ${item.price}
+        £{item.price}
         <span className="text-lg font-medium text-white">/month</span>
       </div>
       <ul className="space-y-3 mb-6 text-textPrimary">
